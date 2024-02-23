@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="tray_up">TRAY UP</string>
+    <string name="rtu">RTU</string>
+    <string name="header">HEADER</string>
+    <string name="minusbutton">minusButton</string>
+    <string name="plus_button">plus_button</string>
+    <string name="item_name">Item Name</string>
+    <string name="_0">0</string>
+</resources>

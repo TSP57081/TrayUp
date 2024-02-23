@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:background="@color/home_card_background"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/strokes"
+        android:layout_margin="6dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/home_card_background"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/lock_unlock_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lock_open"
+            android:layout_marginEnd="6dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/minusbutton" />
+
+        <!-- Item Name TextView -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:textColor="@android:color/black"
+            android:gravity="start"
+            android:layout_gravity="center_vertical"
+            android:text="@string/item_name" />
+
+        <!-- Quantity TextView with Plus and Minus Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Minus Button -->
+            <ImageButton
+                android:id="@+id/btn_minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_minus"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/minusbutton" />
+
+            <!-- Quantity TextView -->
+            <TextView
+                android:id="@+id/text_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/_0" />
+
+            <!-- Plus Button -->
+            <ImageButton
+                android:id="@+id/btn_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_plus"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/plus_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
